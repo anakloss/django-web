@@ -1,0 +1,18 @@
+=== COMANDOS ===
+Crear proyecto:
+    django-admin startproject [nombre]
+
+Iniciar BD:
+    python manage.py migrate
+
+Ejecutar servidor:
+    python manage.py runserver
+
+
+=== NOTAS ===
+views -> urls
+
+**** Templates ****
+1. Crear template: plt = Template(doc_externo.read())
+2. Crear contexto: ctx=Context()
+3. Renderizar el objeto: documento=plt.render(ctx)
