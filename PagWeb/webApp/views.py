@@ -5,13 +5,13 @@ def home(req):
     return render(req, 'webApp/index.html')
 
 def service(req):
-    return HttpResponse("Service")
+    return render(req, 'webApp/service.html')
 
 def market(req):
-    return HttpResponse("Market")
+    return render(req, 'webApp/market.html')
 
 def blog(req):
-    return HttpResponse("Blog")
+    return render(req, 'webApp/blog.html')
 
 def contact(req):
-    return HttpResponse("Contact")
+    return render(req, 'webApp/contact.html')
