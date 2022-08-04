@@ -1,3 +1,17 @@
+from django.http import HttpResponse
 from django.shortcuts import render
 
-# Create your views here.
+def home(req):
+    return render(req, 'webApp/home.html')
+
+def service(req):
+    return HttpResponse("Service")
+
+def market(req):
+    return HttpResponse("Market")
+
+def blog(req):
+    return HttpResponse("Blog")
+
+def contact(req):
+    return HttpResponse("Contact")
