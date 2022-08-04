@@ -2,7 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 def home(req):
-    return render(req, 'webApp/home.html')
+    return render(req, 'webApp/index.html')
 
 def service(req):
     return HttpResponse("Service")
