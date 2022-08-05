@@ -3,8 +3,10 @@ from webApp import views
 
 urlpatterns = [
     path('', views.home, name='Home'),
-    path('service/', views.service, name='Service'),
+    path('about/', views.about, name='About'),
     path('market/', views.market, name='Market'),
-    path('blog/', views.blog, name='Blog'),
+    path('blog-home/', views.blog_home, name='Blog home'),
+    path('blog-post/', views.blog_post, name='Blog post'),
     path('contact/', views.contact, name='Contact'),
+    path('faq/', views.faq, name='FAQ'),
 ]

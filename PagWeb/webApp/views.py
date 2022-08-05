@@ -4,14 +4,20 @@ from django.shortcuts import render
 def home(req):
     return render(req, 'webApp/index.html')
 
-def service(req):
-    return render(req, 'webApp/service.html')
-
 def market(req):
     return render(req, 'webApp/market.html')
 
-def blog(req):
-    return render(req, 'webApp/blog.html')
+def blog_home(req):
+    return render(req, 'webApp/blog-home.html')
+
+def blog_post(req):
+    return render(req, 'webApp/blog-post.html')
+
+def about(req):
+    return render(req, 'webApp/about.html')
 
 def contact(req):
     return render(req, 'webApp/contact.html')
+
+def faq(req):
+    return render(req, 'webApp/faq.html')
