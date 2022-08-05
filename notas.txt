@@ -58,4 +58,7 @@ python manage.py shell
 views -> urls
 models: Crear clases
 add app en settings.py
+
 settings.py -> language_code: cambiar idioma
+            -> DEBUG: True en desarrollo
+            -> MEDIA: para imagenes
