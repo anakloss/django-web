@@ -1,3 +1,4 @@
+import imp
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
@@ -5,7 +6,6 @@ from webApp import views
 
 urlpatterns = [
     path('', views.home, name='Home'),
-    path('about/', views.about, name='About'),
     path('market/', views.market, name='Market'),
     path('blog-home/', views.blog_home, name='Blog home'),
     path('blog-post/', views.blog_post, name='Blog post'),

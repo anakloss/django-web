@@ -1,5 +1,5 @@
-from django.http import HttpResponse
 from django.shortcuts import render
+
 
 def home(req):
     return render(req, 'webApp/index.html')
@@ -12,9 +12,6 @@ def blog_home(req):
 
 def blog_post(req):
     return render(req, 'webApp/blog-post.html')
-
-def about(req):
-    return render(req, 'webApp/about.html')
 
 def contact(req):
     return render(req, 'webApp/contact.html')
