@@ -25,7 +25,7 @@
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item"><a class="nav-link {% if request.path == '/' %}active{% endif %}" href="{% url 'Home' %}">Inicio</a></li>
                             <li class="nav-item"><a class="nav-link {% if request.path == '/about/' %}active{% endif %}" href="{% url 'About' %}">Sobre nosotros</a></li>
-                            <li class="nav-item"><a class="nav-link {% if request.path == '/market/' %}active{% endif %}" href="{% url 'Market' %}">Precios</a></li>
+                            <li class="nav-item"><a class="nav-link {% if request.path == '/market/' %}active{% endif %}" href="{% url 'Market' %}">Tienda</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
@@ -34,7 +34,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item"><a class="nav-link {% if request.path == '/faq/' %}active{% endif %}" href="{% url 'FAQ' %}">FAQ</a></li>
-                            <li class="nav-item"><a class="nav-link {% if request.path == '/contact/' %}active{% endif %}" href="{% url 'Contact' %}">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link {% if request.path == '/contact/' %}active{% endif %}" href="{% url 'Contact' %}">Contacto</a></li>
                             <!-- <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
                                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
