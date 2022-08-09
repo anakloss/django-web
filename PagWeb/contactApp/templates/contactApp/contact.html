@@ -21,11 +21,21 @@
                         <!-- Submit success message-->
                         {% if 'successful' in request.GET %}
                         <!-- <div class="d-none" id="submitSuccessMessage"> -->
-                            <div class="text-center rounded-3 px-3 px-md-5 mb-3">
-                                <h3 class="bg-secondary bg-gradiante text-white fw-bolder rounded-3 mb-0">Envío de formulario exitoso!</h3>
+                            <div class="text-center px-3 px-md-5 mb-3">
+                                <h4 class="bg-secondary bg-gradient text-white fw-bolder rounded-3">Envío exitoso de mensaje!</h4>
                             </div>
                         <!-- </div> -->
                         {% endif %}
+
+                        <!-- Submit error message-->
+                        {% if 'error' in request.GET %}
+                        <!-- <div class="d-none" id="submitErrorMessage"> -->
+                            <div class="text-center text-danger rounded-3 px-3 px-md-5 mb-3">
+                                <h4 class="fw-bolder rounded-3">Error al enviar mensaje!</h4>
+                            </div>
+                        <!-- </div> -->
+                        {% endif %}
+                        
 
                         {% for field in form %}
                         <div class="form-floating mb-3">
@@ -46,14 +56,6 @@
                         <!-- Message input-->
                         <!-- <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div> -->
                         
-                        
-                       
-                       
-                        <!-- Submit error message-->
-                        <!---->
-                        <!-- This is what your users will see when there is-->
-                        <!-- an error submitting the form-->
-                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                         
                         <!-- Submit Button-->
                         <!-- <div class="d-grid"><button class="btn btn-primary btn-lg" id="submitButton" type="submit">Submit</button></div> -->

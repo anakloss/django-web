@@ -125,3 +125,12 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+
+# Configuracion de email https://ethereal.email/
+EMAIL_BACKEND='django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST='smtp.ethereal.email'
+EMAIL_USE_TLS=True
+EMAIL_PORT=587
+EMAIL_HOST_USER='edna.haley@ethereal.email'
+EMAIL_HOST_PASSWORD='BbAq6X2RgE2Wj6QvNf'
