@@ -1,6 +1,6 @@
 
 
-class Carro:
+class Cart:
     def __init__(self, req):
         self.request = req
         self.session = req.session
@@ -12,6 +12,10 @@ class Carro:
     
     def saveCart(self):
         self.session['carro'] = self.carro
+        self.session.modified = True
+    
+    def emptyCart(self):
+        carro = self.session['carro'] = {}
         self.session.modified = True
     
     def addProduct(self, product):
@@ -47,7 +51,3 @@ class Carro:
         if str(product.id) in self.carro:
             del self.carro[str(product.id)]
             self.saveCart()
-    
-    def emptyCart(self):
-        carro = self.session['carro'] = {}
-        self.session.modified = True
