@@ -46,6 +46,17 @@
                     </div>
                 </div>
             </nav>
+            <header class="bg-dark py-1">
+                <div class="container" style="text-align: right"> <p class="fw-bolder" style="color: grey;">
+                    {% if user.is_authenticated %}
+                        Hola {{ user.username }}! &nbsp; <a class="btn btn-outline-light mt-auto" href="{% url 'Logout' %}">Salir</a>
+                    {% else %}
+                        <a class="btn btn-outline-light mt-auto" href="{% url 'Login' %}">Ingresar</a>&nbsp;
+                        <a class="btn btn-outline-light mt-auto" href="{% url 'Register' %}">Regístrate</a>
+                    {% endif %}
+                </p></div>
+            </header>
+            
 
             <!-- Page content-->
             {% block content %}
