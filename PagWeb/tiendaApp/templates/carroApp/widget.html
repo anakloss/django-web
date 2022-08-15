@@ -20,8 +20,8 @@
                 <td>{{ value.product_name }}</td>
                 <td>{{ value.product_cant }}</td>
                 <td>
-                    <a class="btn btn-outline-dark mt-auto" href="{% url 'carro:agregar' value.product_id %}">+</a>
                     <a class="btn btn-outline-dark mt-auto" href="{% url 'carro:restar' value.product_id %}">-</a>
+                    <a class="btn btn-outline-dark mt-auto" href="{% url 'carro:agregar' value.product_id %}">+</a>
                     ${{ value.product_price }}
                 </td>
             </tr>

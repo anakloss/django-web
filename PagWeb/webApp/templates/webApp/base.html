@@ -54,6 +54,14 @@
                         <a class="btn btn-outline-light mt-auto" href="{% url 'Login' %}">Ingresar</a>&nbsp;
                         <a class="btn btn-outline-light mt-auto" href="{% url 'Register' %}">Regístrate</a>
                     {% endif %}
+
+                    <a href="{% url 'Market' %}"><button class="btn btn-outline-light" type="submit">
+                        <i class="bi-cart-fill me-1"></i>Carro
+                        <span class="badge bg-light bg-opacity-25 text-white ms-1 rounded-pill">
+                            {{ total_cant }}
+                        </span>
+                    </button></a>
+
                 </p></div>
             </header>
             
