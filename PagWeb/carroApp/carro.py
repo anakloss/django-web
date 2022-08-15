@@ -1,11 +1,11 @@
 
 class Cart:
     def __init__(self, request):
-        self.request = request
-        self.session = request.session
-        carro = self.request.session.get('carro')
-        if not carro:
-            carro = self.session['carro'] = {}
+        # self.request = request
+        # self.session = request.session
+        # carro = self.request.session.get('carro')
+        # if not carro:
+        #     carro = self.session['carro'] = {}
         self.carro = carro
     
     def saveCart(self):

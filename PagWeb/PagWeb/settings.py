@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crispy_forms',
     'webApp',
     'serviceApp',
     'blogApp',
@@ -138,3 +139,5 @@ EMAIL_USE_TLS=True
 EMAIL_PORT=587
 EMAIL_HOST_USER='edna.haley@ethereal.email'
 EMAIL_HOST_PASSWORD='BbAq6X2RgE2Wj6QvNf'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'

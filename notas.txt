@@ -63,4 +63,4 @@ settings.py -> language_code: cambiar idioma
             -> DEBUG: True en desarrollo
             -> MEDIA: para imagenes
 
-VIDEO 59
+VIDEO 62
