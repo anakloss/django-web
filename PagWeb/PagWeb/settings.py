@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'tiendaApp',
     'carroApp',
     'authApp',
+    'pedidosApp',
 ]
 
 MIDDLEWARE = [

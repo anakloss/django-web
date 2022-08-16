@@ -38,5 +38,22 @@
     </tbody>
     <tfoot>
         <tr><td colspan="3">Total: {{ total_cart }}</td></tr>
+        
+        {% if request.session.carro.items %}
+        <tr><td colspan="3" style="text-align: center;">
+            <a href="{% url 'ProcesarPedido' %}" class="btn btn-outline-dark bg-dark bg-opacity-25 mt-auto">Comprar</a>
+        </td></tr>
+        {% endif %}
+
+        <tr><td colspan="3">
+            {% if messages %}
+            {% for msg in messages %}
+                <div class="alert alert-success text-center">{{ msg }}</div>
+            {% endfor %}
+            {% endif %}
+        </td></tr>
+
     </tfoot>
+
+    
 </table>
