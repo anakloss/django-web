@@ -15,3 +15,5 @@ Proyecto web realizado con Python 3, Django, CSS y HTML.
   Descripción de los productos a la venta y gestión de pedidos, carrito, envio de email, etc. Gestionado desde Panel de administrador de Django.
 ### Contacto
   Formulario de contacto y envio de email.
+### Autorización
+  Gestión de autorización. Página de login o registro a través de cuenta Google.
